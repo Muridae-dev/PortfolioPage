@@ -1,0 +1,74 @@
+@keyframes opacityAnim {
+    0% {opacity:1;}
+    66% {opacity:1;}
+    100% {opacity:0;}
+}
+
+.logo {
+    height:100vh;
+    width:100vw;
+    background:rgb(0, 0, 0);
+    position:absolute;
+    overflow:hidden;
+    opacity:0;
+
+    animation: opacityAnim 5s ease;
+  
+    text-align:center;
+  }
+  
+  @keyframes leftAnim {
+    0% {left: -200%; opacity:0;}
+    100% {left:44%; opacity:1;}
+  }
+  
+  .left-coming-logo {
+    height:10rem;
+    width:auto;
+    transform:rotate(-8deg) translate(-50%, -50%);
+  
+    font-size:10rem;
+  
+    animation: leftAnim 1s ease;
+    position:absolute;
+    top:calc(50% - 15rem);
+    left:44%;
+  }
+  
+  @keyframes rightAnim {
+    0% {top:300%; }
+    50% {top:300%;}
+    100% {top:calc(50% - 7rem);}
+  }
+  
+  .right-coming-logo {
+    height:6rem;
+    width:auto;
+  
+    font-size:6rem;
+    
+    animation: rightAnim 2s ease 0s;
+    position:absolute;
+    top:calc(50% - 7rem);
+    left:57%;
+    transform:rotate(8deg) translate(-50%);
+  }
+
+  @keyframes fadeAnim {
+      0% {opacity:0;}
+      50% {opacity:0;}
+      100% {opacity:1}
+  }
+
+  .fading-in-logo {
+      height:10rem;
+      width:auto;
+
+      font-size:10rem;
+
+      animation: fadeAnim 4s ease 0s;
+      position:absolute;
+      top:calc(50% - 2rem);
+      left:50%;
+      transform:translate(-50%);
+  }
